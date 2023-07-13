@@ -24,7 +24,7 @@ FlySky permite a los agentes de ventas, y al sistema en sí, administrar y mante
 
 ### Resumen de ventas Diarias (Ventas Diarias)
 
-FlySky permite a los administradores, poder generar informes diarios de ventas que muestren el número de ventas realizadas y los ingresos generados, para analizar el rendimiento del negocio y tomar decisiones basadas en datos.
+FlySky permite a los administradores poder generar informes diarios de ventas que muestren el número de ventas realizadas y los ingresos generados, para analizar el rendimiento del negocio y tomar decisiones basadas en datos.
 
 ## Estructura del proyecto
 
