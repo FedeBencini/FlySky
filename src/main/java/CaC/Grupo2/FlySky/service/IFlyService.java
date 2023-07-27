@@ -31,7 +31,7 @@ public interface IFlyService {
     /**
      * Este método sirve para que los <b>Usarios tipo Cliente</b> puedan reservar un Vuelo
      *
-     * @param ReservaDto (ID de usuario que realiza la reserva, vueloID, Lista de asiento a ocupar con su informacion detallada)
+     * @param reservaDto (ID de usuario que realiza la reserva, vueloID, Lista de asiento a ocupar con su informacion detallada)
      * @return Devuelve la reserva Realizada con la siguiente informacion:
      * <ul>
      *     <li>Numero de Reserva</li>
@@ -59,7 +59,7 @@ public interface IFlyService {
     /**
      * Este método sirve para que los <b>Usarios tipo Cliente</b> puedan Pagar la Reserva
      *
-     * @param PagoDto (el cual contine una reservaID, un tipo Pago es cual es un Enum (tarjeta_debito, tarjeta_credito, efectivo, transferencia) y monto)
+     * @param pagoDto (el cual contine una reservaID, un tipo Pago es cual es un Enum (tarjeta_debito, tarjeta_credito, efectivo, transferencia) y monto)
      * @return String Reserva pagada exitosamente
      *
      * @throws NotFoundException cuando No se encontro la reserva con el ID especificado.
@@ -99,6 +99,6 @@ public interface IFlyService {
      * @throws IllegalArgumentException cuando el usuario que consulta no es ADMINISTRADOR
      *
      */
-    RespVentasDiarias getVentasDiarias(SolVentasDiariasDto solVentasDiarias);
+    RespVentasDiarias getVentasDiarias(SolVentasDiariasDto solVentasDiariasDto);
 
 }

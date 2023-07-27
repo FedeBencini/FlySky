@@ -280,9 +280,9 @@ public class FlyService implements IFlyService{
     }
 
     @Override
-    public RespVentasDiarias getVentasDiarias(SolVentasDiariasDto solVentasDiarias) {
+    public RespVentasDiarias getVentasDiarias(SolVentasDiariasDto solVentasDiariasDto) {
 
-        Optional<Usuario> usuario = usuarioRepository.findById(solVentasDiarias.getUsuarioIdAdministrador());
+        Optional<Usuario> usuario = usuarioRepository.findById(solVentasDiariasDto.getUsuarioIdAdministrador());
         if (usuario.isEmpty() ) {
             throw new NotFoundException("El usuario no existe");
         }
